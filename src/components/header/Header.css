@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header-container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.header-container h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.btn-m {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.header__social {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 0.8rem;
+    position: absolute; 
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__social::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.me {
+    /* background: -webkit-linear-gradient(var(--color-primary), black); */
+    position: absolute;
+    width: 200px;
+    height: 280px;
+    border: 2px solid rgb(250, 135, 3);
+    justify-self: center;
+    border-radius: 6.25rem;
+    place-items: center;
+    left: calc(50% - 6rem);
+    margin-top: 3rem;
+    
+}
+
+.me-img {
+    width: 170px;
+    height: 250px;
+    margin: 0.8rem 0 0 0.8rem;
+    background: -webkit-linear-gradient(white, var(--color-primary)) ;
+    border-radius: 5.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom:  5rem;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+
+/* Media Queries (Tablets) */
+
+@media screen and (max-width: 1024px) {
+    .header-container{
+     bottom: 0.5cm;
+    }
+    .scroll__down {
+        position: absolute;
+        right: -0.5rem;
+        bottom:  2rem;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+
+    header {
+        height: 68vh;
+    }
+
+    .me{
+        position: absolute;
+        bottom: 4cm;
+    }
+
+
+}
+
+/* Media Queries (Mobiles) */
+
+@media screen and (max-width: 600px) {
+    header {
+        align-items: center;
+        height: 100vh;
+    }
+    .scroll__down {
+        position: absolute;
+        right: -0.5rem;
+        bottom:  5rem;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+
+    
+
+    
+}
